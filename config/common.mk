@@ -141,7 +141,15 @@ include vendor/gapps/config.mk
 # Pixel Style
 include vendor/pixelstyle/config.mk
 
+# Telephony
+PRODUCT_PACKAGES += \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
+
 # Themes
 #include vendor/themes/config.mk
 
 -include $(WORKSPACE)/build_env/image-auto-bits.mk
+
